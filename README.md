@@ -2,7 +2,7 @@
 Part I of an introduction to Python and NumPy.
 
 ## Tutorial components
-0. Logging into GitHub
+0. [Logging into GitHub](Lesson/GitHub.md)
 1. Downloading the tutorial data
 2. Installing Anaconda
 3. Introduction to Python and NumPy, part I
