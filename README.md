@@ -3,9 +3,9 @@ Part I of an introduction to Python and NumPy.
 
 ## Tutorial components
 0. [Logging into GitHub](Lesson/GitHub.md)
-1. Downloading the tutorial data
-2. Installing Anaconda
-3. Introduction to Python and NumPy, part I
+1. [Downloading the tutorial data](Lesson/Data.md)
+2. [Installing Anaconda](Lesson/Anaconda.md)
+3. [Introduction to Python and NumPy, part I](Lesson/Python-and-NumPy-I.md)
 4. Laboratory exercise 1
 
 ## Resources
