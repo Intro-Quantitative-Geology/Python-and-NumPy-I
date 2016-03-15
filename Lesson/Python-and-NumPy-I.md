@@ -8,12 +8,27 @@ For this lesson, we will be using some data files. Please download a copy of the
 
 1. Open a new Terminal window by clicking on the Dash Home icon at the top left corner of the screen and entering "terminal" into the serach box. Click on the Terminal icon.
 2. Navigate to the Desktop and create a new directory for this week's lesson.
+
     ```bash
     cd ~/Desktop
     mkdir Lab-1
     cd Lab-1
     ```
-3. asdfasdf
+
+3. Copy `Lab-1-data.zip` file to the current directory and extract the data.
+
+    ```bash
+    cp ~/Downloads/Lab-1-data.zip .
+    unzip Lab-1-data.zip
+    cd Data
+    ```
+
+4. Open a new IPython window.
+
+    ```bash
+    ipython
+    ```
+
 
 
 
