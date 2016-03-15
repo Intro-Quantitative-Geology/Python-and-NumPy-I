@@ -5,6 +5,7 @@ This tutorial is based on a combination of [a MATLAB tutorial from Prof. Todd Eh
 
 ## Getting started
 For this lesson, we will be using some data files. Please download a copy of the data and do the following:
+
 1. Open a new Terminal window by clicking on the Dash Home icon at the top left corner of the screen and entering "terminal" into the serach box. Click on the Terminal icon.
 2. Navigate to the Desktop and create a new directory for this week's lesson.
     ```bash
