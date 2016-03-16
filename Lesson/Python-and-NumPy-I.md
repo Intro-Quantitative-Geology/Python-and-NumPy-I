@@ -47,13 +47,14 @@ We will start our Python lesson by learning a bit of the basic operations you ca
     Wait, what? Python can't calculate square roots or do basic trigonometry? Of course it can, but we need one more step.
 
 3. The list of basic arithmetic operations that can be done by default in Python is in the table below.
-| Operation      | Symbol | Example syntax | Returned value |
-| -------------- | ------ | ---------------|----------------|
-| Addition       | `+`    | `2 + 2`        | `4`            |
-| Subtraction    | `-`    | `4 + 2`        | `2`            |
-| Multiplication | `*`    | `2 * 3`        | `6`            |
-| Division       | `/`    | `4 / 2`        | `2`            |
-| Exponentiation | `**`   | `2**3`         | `8`            |
+
+    | Operation      | Symbol | Example syntax | Returned value |
+    | -------------- | ------ | ---------------|----------------|
+    | Addition       | `+`    | `2 + 2`        | `4`            |
+    | Subtraction    | `-`    | `4 + 2`        | `2`            |
+    | Multiplication | `*`    | `2 * 3`        | `6`            |
+    | Division       | `/`    | `4 / 2`        | `2`            |
+    | Exponentiation | `**`   | `2**3`         | `8`            |
 For anything more advanced, we need to load a *library*.
 
     ```python
