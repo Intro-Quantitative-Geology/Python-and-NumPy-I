@@ -5,7 +5,7 @@ For the exercises in this course we'll be using the Anaconda Python distribution
 The Anaconda installation process on the laboratory computers will need to be done once for the course, but it is quite slow.
 
 1. Start by downloading a copy of the [Anaconda Python distribution for Linux](http://repo.continuum.io/archive/Anaconda3-2.5.0-Linux-x86_64.sh). This is the 64-bit version based on Python 3.5.
-2. After the download completes, open a new Terminal window by clicking on the Dash Home icon at the top left corner of the screen,  entering `terminal` into the search box, and clicking on the Terminal icon.
+2. After the download completes, open a new Terminal window by clicking on the Dash Home icon at the top left corner of the screen,  typing `terminal` into the search box, and clicking on the Terminal icon.
 3. You can now start the installation process
 
     ```bash
