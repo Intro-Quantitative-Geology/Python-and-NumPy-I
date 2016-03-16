@@ -12,7 +12,6 @@ The Anaconda installation process on the laboratory computers will need to be do
     $ cd ~/Downloads
     $ bash Anaconda3-2.5.0-Linux-x86_64.sh
     ```
-
 Note the `$` symbol represents the command prompt in the Terminal window.
 4. You will be first asked to agree to the license agreement. Press **Enter** to review the license. You can press space several times to get to the bottom of the agreement and then type in `yes` and press **Enter**.
 5. Next, you are asked about the installation location. Simply press **Enter** to install in the default location.
