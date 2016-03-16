@@ -6,7 +6,7 @@ Part I of an introduction to Python and NumPy.
 1. [Downloading the lesson data](Lesson/Data.md)
 2. [Installing Anaconda](Lesson/Anaconda.md)
 3. [Introduction to Python and NumPy, part I](Lesson/Python-and-NumPy-I.md)
-4. Laboratory exercise 1
+4. [Laboratory exercise 1](Exercise-1.md)
 
 ## Resources
 - Web pages
