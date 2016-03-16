@@ -268,18 +268,53 @@ You may see a few messages, but don't worry about them. Note here that we have i
 2. Let's start with a simple example using our old variables `x` and `y`.
 
     ```python
-    >>> plt.plot(x,y)
+    >>> plt.plot(x, y)
     [<matplotlib.lines.Line2D at 0x109e25898>]
     >>> plt.show()
     ```
 This should produce a plot like the one below.
 
-    ![Sine wave from zero to two pi](Images/Sine-0-2pi.png)
+    ![Sine curve from zero to two pi](Images/Sine-0-2pi.png)
+A bit easier to visualize the array data rather than looking at the values themselves.
+2. We can make our plots a bit nicer by using a few additional Matplotlib options.
 
-	13. NumPy array methods: Lots of useful ones: `print('maximum inflammation:', data.max())` `print('minimum inflammation:', data.min())` `print('standard deviation:', data.std())`
-	14. Partial datasets: Can create temporary arrays with part of a larger array: `patient_0 = data[0, :] # 0 on the first axis, everything on the second` `print('maximum inflammation for patient 0:', patient_0.max())` But we don’t even need to assign `patient_0` `print('maximum inflammation for patient 2:', data[2, :].max())`
-	15. Operations across axes slide `print(data.mean(axis=0))` Can check the size of this output `print(data.mean(axis=0).shape)` Looks OK. We have an *N*x1 vector, so this is the average inflammation per day for all 40 patients. Average inflammation per patient across all days: `print(data.mean(axis=1))`
-	16. Visualization using `matplotlib` `import matplotlib.pyplot` `image  = matplotlib.pyplot.imshow(data)` `matplotlib.pyplot.show(image)` We get a “heat map” with reds showing higher inflammation
-	17. More visualization: Average inflammation over time: `ave_inflammation = data.mean(axis=0)` `ave_plot = matplotlib.pyplot.plot(ave_inflammation)` `matplotlib.pyplot.show(ave_plot)` Expected a sharper rise and shallower fall… Max: `max_plot = matplotlib.pyplot.plot(data.max(axis=0))` `matplotlib.pyplot.show(max_plot)` Min: `min_plot = matplotlib.pyplot.plot(data.min(axis=0))` `matplotlib.pyplot.show(min_plot)` Seems suspicious
-	18. Subplots: Probably need to make a Python script file to use this example. Would mean opening a second terminal window, etc. `import numpy` `import matplotlib.pyplot`  `data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')`  `fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))`  `axes1 = fig.add_subplot(1, 3, 1)` `axes2 = fig.add_subplot(1, 3, 2)` `axes3 = fig.add_subplot(1, 3, 3)`  `axes1.set_ylabel('average')` `axes1.plot(data.mean(axis=0))`  `axes2.set_ylabel('max')` `axes2.plot(data.max(axis=0))`  `axes3.set_ylabel('min')` `axes3.plot(data.min(axis=0))`  `fig.tight_layout()`  `matplotlib.pyplot.show(fig)` Lots of new stuff here, probably will skip this…
-	19. `import numpy as np`;`import matplotlib.pyplot as plt`
+    ```python
+    >>> plt.plot(x, y, 'ro--')
+    [<matplotlib.lines.Line2D at 0x10bd249e8>]
+    >>> plt.title('Sine curve')
+    <matplotlib.text.Text at 0x10b0af320>
+    >>> plt.xlabel('x-axis'); plt.ylabel('y-axis')
+    <matplotlib.text.Text at 0x10b08df98>
+    >>> plt.show()
+    ```
+This should produce the plot below.
+
+    ![Fancy sine curve ](Images/Sine-in-red.png)
+
+Now we see our sine curve as a red dashed line with circles showing the points along the line. This comes from the additional `ro--` used with `plt.plot()`. In this case, `r` tells it to use red color, `o` tells it to show circles at the points and `--` says to use a dashed line. You can use `help(plt.plot)` to find out more about formatting plots. We have also added a title and axis labels.
+3. Adding text to plots can be done using the `plt.text()` function.
+
+    ```python
+    >>> plt.text(2.0, 0.0, 'Here is some text')
+    ```
+This would add the text "Here is some text" at the location x=2.0, y=0.0 on the plot. You will need to do `plt.show()` again to update the plot.
+4. Changing the plot axes can be done using the `plt.axis()` function.
+
+    ```python
+    >>> plt.axis([0.0, np.pi, 0.0, 1.0])
+    ```
+The format for `plt.axis()` is `[xmin, xmax, ymin, ymax]` enclosed in square brackets. Here, the x range would be changed to 0-pi and the y range would be 0-1.
+
+## Getting help
+You can get help on the different Python functions using the `help()` function.
+
+1. Other than using Google, the easiest way to get help in Python is to use the `help()` function as shown below.
+
+    ```python
+    >>> help(plt.plot)
+    Help on function plot in module matplotlib.pyplot:
+
+    plot(*args, **kwargs)
+    ...
+    ```
+This brings up a documentation browser for whatever function you give to `help`. You can scroll up and down with the arrows and exit the documentation browser by typing `q`.
