@@ -1,36 +1,96 @@
-# Introduction to Python and NumPy, part 1
+# Introduction to Python and NumPy, part I
 
 ## Sources
 This tutorial is based on a combination of [a MATLAB tutorial from Prof. Todd Ehlers (Uni Tübingen)](http://www.geo.uni-tuebingen.de/arbeitsgruppen/mineralogie-geodynamik/geologie-geodynamik/ibm-documentation/matlab-tutorial.html) and the [Software Carpentry group's](http://software-carpentry.org/) lessons on [Programming with Python](http://swcarpentry.github.io/python-novice-inflammation/).
 
 ## Getting started
-For this lesson, we will be using some data files. Please download a copy of the data and do the following:
-
-1. Open a new Terminal window by clicking on the Dash Home icon at the top left corner of the screen and entering "terminal" into the serach box. Click on the Terminal icon.
-2. Navigate to the Desktop and create a new directory for this week's lesson.
+1. Since [Anaconda is likely installing in the background[(Anaconda.md)], you should open a second Terminal window by clicking on the Dash Home icon at the top left corner of the screen, typing `terminal` into the search box, and clicking on the Terminal icon. Alternatively, you can right click on the existing Terminal icon and select **New Terminal**.
+2. I assume you have also already [downloaded and extracted the lesson data](Data.md), so you can navigate to the `Data` directory to start this lesson.
 
     ```bash
-    cd ~/Desktop
-    mkdir Lab-1
-    cd Lab-1
+    $ cd ~/Desktop/Lab-1/Data
     ```
-
-3. Copy `Lab-1-data.zip` file to the current directory and extract the data.
-
-    ```bash
-    cp ~/Downloads/Lab-1-data.zip .
-    unzip Lab-1-data.zip
-    cd Data
-    ```
-
-4. Open a new IPython window.
+Note the `$` symbol represents the command prompt in the Terminal window.
+3. Open a new IPython window.
 
     ```bash
     ipython
     ```
 
+Now we are ready to start.
+
+## Variables, arithmetic and libraries
+We will start our Python lesson by learning a bit of the basic operations you can perform using Python.
+
+1. Python can be used as a simple calculator.
+
+    ```python
+    >>> 1 + 1
+    2
+    >>> 5 * 7
+    35
+    ```
+
+2. You can use Python for more advanced math by using *functions*. Functions are pieces of code that perform a single action such as printing information to the screen (e.g., the `print()` function). Functions exist for a huge number of operations in Python.
+
+    ```python
+    >>> sin(3)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'sin' is not defined
+    >>> sqrt(4)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'sqrt' is not defined
+    ```
+
+    Wait, what? Python can't calculate square roots or do basic trigonometry? Of course it can, but we need one more step.
+
+3. The list of basic arithmetic operations that can be done by default in Python is in the table below.
+| Operation      | Symbol | Example syntax | Returned value |
+| -------------- | ------ | ---------------|----------------|
+| Addition       | `+`    | `2 + 2`        | `4`            |
+| Subtraction    | `-`    | `4 + 2`        | `2`            |
+| Multiplication | `*`    | `2 * 3`        | `6`            |
+| Division       | `/`    | `4 / 2`        | `2`            |
+| Exponentiation | `**`   | `2**3`         | `8`            |
+For anything more advanced, we need to load a *library*.
+
+    ```python
+    >>> import math
+    >>> math.sin(3)
+    0.1411200080598672
+    >>> math.sqrt(4)
+    2.0
+    ```
+
+A *library* is a group of code items such as functions that are related to one another. Libraries are loaded using `import`. Functions that are part of the library `libraryname` could then be used by typing `libraryname.functionname()`. For example, `sin()` is a function that is part of the `math` library, and used by typing `math.sin()` with some number between the parentheses.
+4. Functions can also be combined.
+
+    ```python
+    >>> print(math.sqrt(4))
+    2.0
+    >>> print('The square root of 4 is',math.sqrt(4))
+    The square root of 4 is 2.0
+    ```
+
+5. *Variables* can be used to store values calculated in expressions.
+
+    ```python
+    >>> x = 2 + 2
+    >>> print(x)
+    4
+    >>> y = math.sqrt(x)
+    >>> print(y)
+    2.0
+    ```
 
 
+
+## Introducing NumPy
+NumPy is a library for Python designed for efficient scientific computing. Here, we'll get a sense of a few things NumPy can do.
+
+1.
 
 0. Why Python and the patient data
 
