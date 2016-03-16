@@ -15,8 +15,8 @@ Note the `$` symbol represents the command prompt in the Terminal window.
 4. Copy `Lab-1-data.zip` file to the current directory and extract the data.
 
     ```bash
-    $ cp ~/Downloads/Lab-1-data.zip .
-    $ unzip Lab-1-data.zip
+    $ cp ~/Downloads/Lab-1-Data.zip .
+    $ unzip Lab-1-Data.zip
     $ cd Data
     ```
 
