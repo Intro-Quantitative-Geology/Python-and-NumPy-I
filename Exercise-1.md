@@ -14,6 +14,7 @@ For this problem, we will use the volcano data file `Data/GVP-Volcano-Lat-Lon-El
 
 ## Problem 2 - Plotting everything but the kitchen sinc (?)
 For this exercise need to produce a plot of the `sinc()` function from 0 to 8π, but you cannot use the `sinc()` function that is part of NumPy or the Python math library. Instead, calculate the sinc function is as the sin(π*x)/(π*x). This function is the continuous inverse Fourier transform of the rectangular pulse of width 2π and height
+
 1. You should create a 1-D array `x` that goes from 0 to 8π by increments of 0.1 and a variable `y` that is the `sinc(x)`.
 2. Plot the values of `y` as a function of `x` with grid lines in the background of the plot (see `help(plt.grid)` for guidance), label the axes appropriately and give the plot a title.
 3. In between commands, please provide comments describing the purpose of each line you have typed.
@@ -28,6 +29,7 @@ $ ipython Mohr-circle-D-P-2D.py
 ```
 
 Please run the code and answer the following questions:
+
 1. What is the purpose of this code, what does it do, and does it appear to work properly?
 2. What are the commands you recognize in the code?
 3. What are the commands you do not recognize?
