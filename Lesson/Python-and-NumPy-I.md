@@ -208,7 +208,16 @@ Nice! Note that in this case, the range of index values for the first 5 rows is 
     ```
 This, obviously, can be useful.
 
-7. It is common to need to create your own arrays not from a data file, but to make a variable that has a range from one value to another. If we wanted to calculate the `sin()` of a variable `x` at 10 points from zero to 2 * pi, we could do the following.
+7. We can also use *index slicing* to separate our data into different variables to make it easier to work with.
+
+    ```python
+    >>> Latitude = data[:,1]
+    >>> print(Latitude)
+    array([ 50.17 ,  45.775,  42.17 , ..., -73.45 , -64.15 , -62.02 ])
+    ```
+For many data files, this is a nice way to interact with only the data of your own interest.
+
+8. It is common to need to create your own arrays not from a data file, but to make a variable that has a range from one value to another. If we wanted to calculate the `sin()` of a variable `x` at 10 points from zero to 2 * pi, we could do the following.
 
     ```python
     >>> x = np.linspace(0., 2 * np.pi, 10)
@@ -230,7 +239,7 @@ This, obviously, can be useful.
     ```
     In this case, `x2` starts at zero and goes to the largest value that is smaller than 2 * pi by increments of 0.5. Both of these types of array options are useful in different situations.
 
-8. Like normal variables, array variables can also be used for various mathematical operations.
+9. Like normal variables, array variables can also be used for various mathematical operations.
     ```python
     >>> doublex = x * 2.0
     >>> print(doublex)
@@ -238,7 +247,7 @@ This, obviously, can be useful.
        6.98131701   8.37758041   9.77384381  11.17010721  12.56637061]
     ```
 
-9. In addition to the *attributes* we saw prevously for NumPy `ndarray` variables, there are built-in functions that are part of the `ndarray` data type. These built-in functions are called *methods*.
+10. In addition to the *attributes* we saw prevously for NumPy `ndarray` variables, there are built-in functions that are part of the `ndarray` data type. These built-in functions are called *methods*.
 
     ```python
     >>> print(x.mean())
@@ -248,7 +257,7 @@ This, obviously, can be useful.
     ```
     No surprises here. If we think of *variables* as nouns, *methods* are verbs, actions for the variable values. NOTE: When using methods, you always include the parentheses `()` to be clear we are referring to a *method* and not an *attribute*. There are many other useful `ndarray` methods, such as `x.min()`, `x.max()`, and `x.std()` (standard deviation).
 
-10. *Methods* can also act on part of an array.
+11. *Methods* can also act on part of an array.
 
     ```python
     >>> print(x[0:5].mean())
