@@ -1,5 +1,5 @@
 # Laboratory exercise 1
-In this first exercise, you should test you new knowledge of Python by performing the following tasks.
+In this first exercise, you should test your new knowledge of Python by performing the following tasks.
 
 ## Problem 1 - Volcano slicing
 For this problem, we will use the volcano data file `Data/GVP-Volcano-Lat-Lon-Elev.csv`. As you may recall, this file contains the volcano ID number, latitude, longitude and elevation for Holocene volcanoes in the [Smithsonian Institution's volcano database](http://volcano.si.edu/). I would like you to analyze this file a bit by calculating various values from the data file. Please copy and paste **ALL** of the commands you used to load in the data file and as well as your calculated values for the following.
